@@ -11,7 +11,8 @@ public class Test : MonoBehaviour {
 		Debug.Log("3 kwietnia, commit z domu + PUSH");		
 		Debug.Log("3 kwietnia, commit z domu, bez PUSH");		
 		Debug.Log("4 kwietnia, commit z domu + PUSH // w międzyczasie z pracy był PUSH");		
-		Debug.Log("4 kwietnia, commit z roboty + PUSH");		
+		Debug.Log("4 kwietnia, commit z roboty + PUSH");
+		Debug.Log("6 kwietnia, commit z domu + PUSH");
 	}
 }
 
