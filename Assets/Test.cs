@@ -9,6 +9,8 @@ public class Test : MonoBehaviour {
 		Debug.Log("2 kwietnia, commit z domu");		
 		Debug.Log("3 kwietnia, commit z roboty");		
 		Debug.Log("3 kwietnia, commit z domu + PUSH");		
+		Debug.Log("3 kwietnia, commit z domu, bez PUSH");		
+		Debug.Log("4 kwietnia, commit z domu + PUSH // w międzyczasie z pracy był PUSH");		
 		Debug.Log("4 kwietnia, commit z roboty + PUSH");		
 		Debug.Log("6 kwietnia, commit z roboty + PUSH");		
 	}
@@ -28,8 +30,19 @@ public class Test : MonoBehaviour {
  * następnie dodać linijkę i zacommitować + PUSH 
  * następnie dodać linijkę i zacommitować, BEZ PUSH (obie wersje mają się od tej pory różnić)
  * W ROBOCIE dodać linijkę i zacommitować + PUSH (nie powinno być konfliktu, w remocie będzie wersja bez dodatkowych zmian Z DOMU)
+ * W DOMU dodać linijkę i zacommitować + PUSH (powinien pojawić się konflikt, bo wersje będą się różnić) - pojawił się konflikt, patrz niżej
  * ======================================================================================================
- * W DOMU dodać linijkę i zacommitować + PUSH (powinien pojawić się konflikt, bo wersje będą się różnić)
+ * w ROBOCIE dodać linijkę i zacommitować, następnie spróbować zrobić PUSH, powinien zaproponować PULL, a następnie pokazać konflikt (najprawdopodobniej tym razem HEAD będzie dotyczył brancha pracowego, a zmiany domowe remote'a)
+ * 
+ * <<<<<<< HEAD															// <<<< HEAD - current branch, czyli ten branch, na którym aktualnie pracuję, 
+		Debug.Log("3 kwietnia, commit z domu, bez PUSH");		
+		Debug.Log("4 kwietnia, commit z domu + PUSH // w międzyczasie z pracy był PUSH");		
+=======																	// ==== oddziela zmiany na HEADzie i remote'ie
+		Debug.Log("4 kwietnia, commit z roboty + PUSH");				// >>>> zmiany wprowadzone na remote'ie, których nie ma na current branchu, a które wyszły dopiero po próbie PUSH/PULLA
+>>>>>>> 10bf02c8b0571a2bdba582b680a18e9605694ec7
+ *
+ * 
+ * 
  * 
  * 
  * 
