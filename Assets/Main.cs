@@ -6,13 +6,11 @@ public class Main : MonoBehaviour
 {
 	public Service Service;
 
-	//public delegate void DelegateMethod(string text);
-	//public DelegateMethod DelegateMethodIns;
+	public delegate void DelegateCallback(int a, int b);
+	public DelegateCallback DelegateCallbackIns;
 
-	void Start ()
+	private void Start ()
 	{
-		//DelegateMethodIns("aaaa");
-
 		for (int i = 0; i < 2; i++)
 		{
 			if (i < 1)
@@ -20,12 +18,9 @@ public class Main : MonoBehaviour
 			else
 				DelegateCallbackIns = Service.CallBack2;
 
-			DelegateCallbackIns(2, 8);
+			CallbackMethod(2, 8, DelegateCallbackIns);
 		}
 	}
-
-	public delegate void DelegateCallback(int a, int b);
-	public DelegateCallback DelegateCallbackIns;
 
 	public void CallbackMethod(int a, int b, DelegateCallback cllbck)
 	{
