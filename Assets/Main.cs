@@ -14,9 +14,9 @@ public class Main : MonoBehaviour
 		for (int i = 0; i < 2; i++)
 		{
 			if (i < 1)
-				DelegateCallbackIns = Service.CallBack1;
+				DelegateCallbackIns = Service.Callback1;
 			else
-				DelegateCallbackIns = Service.CallBack2;
+				DelegateCallbackIns = Service.Callback2;
 
 			CallbackMethod(2, 8, DelegateCallbackIns);
 		}
