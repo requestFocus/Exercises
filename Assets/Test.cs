@@ -5,15 +5,15 @@ using UnityEngine;
 public class Test : MonoBehaviour {
 
 	void Start () {
-		Debug.Log("test");		
-		Debug.Log("2 kwietnia, commit z domu");		
-		Debug.Log("3 kwietnia, commit z roboty");		
-		Debug.Log("3 kwietnia, commit z domu + PUSH");		
-		Debug.Log("3 kwietnia, commit z domu, bez PUSH");		
-		Debug.Log("4 kwietnia, commit z domu + PUSH // w międzyczasie z pracy był PUSH");		
-		Debug.Log("4 kwietnia, commit z roboty + PUSH");
-		Debug.Log("6 kwietnia, commit z domu + PUSH");
-		Debug.Log("6 kwietnia, commit z roboty + PUSH");		
+		//Debug.Log("test");		
+		//Debug.Log("2 kwietnia, commit z domu");		
+		//Debug.Log("3 kwietnia, commit z roboty");		
+		//Debug.Log("3 kwietnia, commit z domu + PUSH");		
+		//Debug.Log("3 kwietnia, commit z domu, bez PUSH");		
+		//Debug.Log("4 kwietnia, commit z domu + PUSH // w międzyczasie z pracy był PUSH");		
+		//Debug.Log("4 kwietnia, commit z roboty + PUSH");
+		//Debug.Log("6 kwietnia, commit z domu + PUSH");
+		//Debug.Log("6 kwietnia, commit z roboty + PUSH");		
 	}
 }
 
