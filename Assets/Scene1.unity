@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c1094fc7b26554faf23dc3e58c95d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Service: {fileID: 972282197}
+  Service: {fileID: 0}
 --- !u!4 &888178635
 Transform:
   m_ObjectHideFlags: 0
@@ -221,7 +221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6903e859510856841af155b2984f658f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 0
 --- !u!4 &972282198
 Transform:
   m_ObjectHideFlags: 0

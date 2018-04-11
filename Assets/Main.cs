@@ -9,7 +9,7 @@ public class Main : MonoBehaviour
 	public delegate void DelegateCallback(int a, int b);
 	public DelegateCallback DelegateCallbackIns;
 
-	private void Start ()
+	private void Start()
 	{
 		for (int i = 0; i < 2; i++)
 		{
