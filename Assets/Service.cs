@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class Service : MonoBehaviour
 {
-	public bool State;
+	//public bool State;
 
-	public delegate bool DelegateType();
-	public DelegateType DelegateIns;
+	//public delegate bool DelegateType();
+	//public DelegateType DelegateIns;
 
-	private void Start()
-	{
-		DelegateIns = Method1;
+	//private void Start()
+	//{
+	//	DelegateIns = Method1;
 
-		CallbackMethod(DelegateIns);
-	}
+	//	CallbackMethod(DelegateIns);
+	//}
 
-	public bool Method1()
-	{
-		return State;
-	}
+	//public bool Method1()
+	//{
+	//	return State;
+	//}
 
-	public void CallbackMethod(DelegateType cllbck)
-	{
-		Debug.Log("state: " + cllbck());
-	}
+	//public void CallbackMethod(DelegateType cllbck)
+	//{
+	//	Debug.Log("state: " + cllbck());
+	//}
 
 
 	//==========================
