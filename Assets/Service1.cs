@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Service : MonoBehaviour
+public class Service1 : MonoBehaviour
 {
 	public void Callback1(int a, int b)
 	{
